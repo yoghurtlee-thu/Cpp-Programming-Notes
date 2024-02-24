@@ -1,6 +1,6 @@
 # cpp programming notes
 
-> Please view English Version in [README.en.md](https://gitee.com/yoghurtle-thu/cpp-programming-notes-new/blob/master/README.en.md).
+> Please view English Version in [README.en.md](https://gitee.com/yoghurtle-thu/cpp-programming-notes-new/blob/main/README.en.md).
 
 ## 简介
 
