@@ -1,4 +1,4 @@
-# cpp programming notes
+# C++ Programming Notes
 
 ## Intro
 
@@ -8,4 +8,4 @@ Anyway, I hope they can help you. I'm sure you'll give me a star (and pigs might
 
 The related notes are available on my personal blog https://yoghurtlee.com.
 
-The code in this repository is open-sourced under the [Unlicense](vscode-file://vscode-app/d:/%E7%A8%8B%E5%BA%8F/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html "https://unlicense.org/").
+The code in this repository is open-sourced under the [Unlicense](https://unlicense.org/).
