@@ -24,7 +24,7 @@ public:
 
 int main()
 {
-    // student s; // 错误,不能为抽象类创建实例
+    // student s; // 不能为抽象类创建实例
     // high_school_student h;
     college_student c;
 

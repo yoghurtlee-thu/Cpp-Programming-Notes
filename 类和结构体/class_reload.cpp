@@ -26,8 +26,8 @@ public:
 
 int main()
 {
-    student s[100]; // 假装已经初始化
+    student s[100];
     sort(s, s + 100);
-
+    // 不要真的运行这个代码，因为实际上没有初始化s
     return 0;
 }

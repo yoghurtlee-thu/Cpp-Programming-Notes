@@ -1,4 +1,4 @@
-// ±¾½Ú½²½â¶àÌ¬
+// æœ¬èŠ‚è®²è§£å¤šæ€
 #include <iostream>
 
 using namespace std;
@@ -6,18 +6,18 @@ using namespace std;
 class student
 {
 public:
-    virtual void vacation()
+    virtual void vacation() // è™šå‡½æ•°
     {
-        cout << "Ñ§Éú·Å¼ÙÁË!" << endl;
+        cout << "å­¦ç”Ÿæ”¾å‡äº†!" << endl;
     }
 };
 
 class high_school_student : public student
 {
 public:
-    void vacation()
+    void vacation() // é‡å†™çˆ¶ç±»çš„è™šå‡½æ•°
     {
-        cout << "¼ÙÆÚÊÇÊ²Ã´?" << endl;
+        cout << "å‡æœŸæ˜¯ä»€ä¹ˆ?" << endl;
     }
 };
 
@@ -26,7 +26,7 @@ class college_student : public student
 public:
     void vacation()
     {
-        cout << "·Ï ÇŞ Íü Ê³" << endl;
+        cout << "åºŸ å¯ å¿˜ é£Ÿ" << endl;
     }
 };
 
@@ -37,12 +37,12 @@ void test(student &s)
 
 int main()
 {
-    void (student::*p)() = &student::vacation;
+    void (student::*p)() = &student::vacation; // è¿™æ˜¯ä¸€ä¸ªå‡½æ•°æŒ‡é’ˆ
     high_school_student hss;
     college_student cs;
     test(hss);
     test(cs);
     cout << sizeof(student) << endl;
-    (hss.*p)();
+    (cs.*p)();
     return 0;
 }

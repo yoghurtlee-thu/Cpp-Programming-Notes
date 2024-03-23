@@ -1,3 +1,4 @@
+// 本节讲解匿名对象
 #include <iostream>
 
 using namespace std;
