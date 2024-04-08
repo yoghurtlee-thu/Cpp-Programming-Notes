@@ -1,8 +1,17 @@
-// 本节讲解 deque 容器
+// todo: 本节讲解 deque 容器的基本操作
 #include <iostream>
 #include <deque>
 
 using namespace std;
+
+void printDeque(const deque<int>& dq) // *不要忘记加上 <int>
+{
+    for (deque<int>::const_iterator it = dq.begin(); it != dq.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    return;
+}
 
 int main()
 {
@@ -20,10 +29,7 @@ int main()
     cout << "dq.size() = " << dq.size() << endl;   // 访问大小
     cout << "dq.empty() = " << dq.empty() << endl; // 判断是否为空
 
-    for (auto &i : dq)
-    {
-        cout << i << endl;
-    }
+    printDeque(dq); // 使用迭代器打印
     
     return 0;
 }

@@ -1,4 +1,4 @@
-// ±¾½Ú½²½â¾²Ì¬³ÉÔ±
+// todoï¼šæœ¬èŠ‚è®²è§£é™æ€æˆå‘˜
 #include <iostream>
 
 using namespace std;
@@ -6,23 +6,32 @@ using namespace std;
 class ppl
 {
 public:
-    // static int humanity = 0; // ¾²Ì¬³ÉÔ±±äÁ¿²»ÄÜÔÚÀàÄÚ³õÊ¼»¯
-    static int humanity; // ¾²Ì¬³ÉÔ±±äÁ¿
-    int age;             // ÆÕÍ¨³ÉÔ±±äÁ¿
+    // static int humanity = 0; // é™æ€æˆå‘˜å˜é‡ä¸èƒ½åœ¨ç±»å†…åˆå§‹åŒ–
+    static int humanity; // é™æ€æˆå‘˜å˜é‡
+    int age;             // æ™®é€šæˆå‘˜å˜é‡
 
-    static void set_humanity(int h) // ¾²Ì¬³ÉÔ±º¯Êı
+    static void set_humanity(int h) // é™æ€æˆå‘˜å‡½æ•°
     {
         humanity = h;
     }
 
     static void set_age(int a)
     {
-        // age = a; // ¾²Ì¬³ÉÔ±º¯Êı²»ÄÜ·ÃÎÊÆÕÍ¨³ÉÔ±±äÁ¿
+        // age = a; // é™æ€æˆå‘˜å‡½æ•°ä¸èƒ½è®¿é—®æ™®é€šæˆå‘˜å˜é‡
     }
 
 private:
-    static int pri_sta; // ¾²Ì¬³ÉÔ±±äÁ¿¿ÉÒÔÊÇË½ÓĞµÄ
+    static int pri_sta; // é™æ€æˆå‘˜å˜é‡å¯ä»¥æ˜¯ç§æœ‰çš„
 };
 
-int ppl::humanity = 0; // ¾²Ì¬³ÉÔ±±äÁ¿³õÊ¼»¯
-int ppl::pri_sta = 0;  // Ë½ÓĞµÄ¾²Ì¬³ÉÔ±±äÁ¿³õÊ¼»¯
+int ppl::humanity = 0; // é™æ€æˆå‘˜å˜é‡åˆå§‹åŒ–
+int ppl::pri_sta = 0;  // ç§æœ‰çš„é™æ€æˆå‘˜å˜é‡åˆå§‹åŒ–
+
+int main()
+{
+    ppl p1, p2;
+    p1.set_humanity(100);
+    p2.set_humanity(200);
+    cout << p1.humanity << endl;
+    return 0;
+}

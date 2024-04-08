@@ -5,7 +5,7 @@ using namespace std;
 
 class Base
 {
-    public:
+public:
     virtual void func()
     {
         cout << "这是一个测试函数" << endl;
@@ -14,7 +14,7 @@ class Base
 
 class Derived1 : public Base
 {
-    public:
+public:
     void func()
     {
         cout << "这是第一个派生类的测试函数" << endl;
@@ -23,7 +23,7 @@ class Derived1 : public Base
 
 class Derived2 : public Base
 {
-    public:
+public:
     void func()
     {
         cout << "这是第二个派生类的测试函数" << endl;

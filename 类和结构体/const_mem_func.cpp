@@ -1,4 +1,4 @@
-// ±¾½Ú½²½â³£³ÉÔ±º¯ÊıºÍ³£³ÉÔ±±äÁ¿
+// todo: æœ¬èŠ‚è®²è§£å¸¸é‡æˆå‘˜å‡½æ•°å’Œå¸¸é‡æˆå‘˜å˜é‡
 #include <iostream>
 #include <string>
 
@@ -7,24 +7,20 @@ using namespace std;
 class ppl
 {
 public:
-	int age;
-	const string character; // ½­É½Ò×¸Ä£¬±¾ĞÔÄÑÒÆ
-	const void time_pass()
-	{
-		cout << character << endl; // ÈÕ¾Ã¼ûÈËĞÄ
-		// character = ""; // ´íÎó£¬²»ÄÜĞŞ¸Ä³£³ÉÔ±±äÁ¿
-		age = 0; // ÕıÈ·£¬¿ÉÒÔĞŞ¸Ä·Ç³£³ÉÔ±±äÁ¿
-	};
+    ppl(const int &a, const string &c) : age(a), character(c) {}
+    int age;
+    const string character; // å¸¸æˆå‘˜
+    const void time_pass()
+    {
+        cout << character << endl; // å¯ä»¥è®¿é—®ï¼Œä½†æ˜¯ä¸èƒ½ä¿®æ”¹
+        // character = ""; // !é”™è¯¯ï¼Œä¸èƒ½ä¿®æ”¹å¸¸é‡æˆå‘˜å˜é‡
+        age = 0; // æ­£ç¡®ï¼Œå¯ä»¥ä¿®æ”¹éå¸¸é‡æˆå‘˜å˜é‡
+    };
 };
-
-const void print(int a) // ÕâÑùÒ²ÊÇ¿ÉÒÔµÄ£¬²»¹ıÎÒÃÇÒ»°ãÊ¹ÓÃ³£ÒıÓÃ
-{
-	cout << a << endl;
-}
 
 int main()
 {
-	int a = 10;
-	print(a);
-	return 0;
+    ppl p(20, "abc");
+    p.time_pass();
+    return 0;
 }

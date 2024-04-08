@@ -1,3 +1,4 @@
+// 本文件存储了所有类的定义
 #pragma once
 #include <iostream>
 #include <string>
@@ -102,4 +103,27 @@ public:
 		}
 		return;
 	}
+};
+
+class teacher : public staff
+{
+protected:
+	string department;
+	string tenure;
+	vector<string> courses;
+};
+
+class student : public staff
+{
+protected:
+	string major;
+	int gpa;
+	vector<string> courses;
+};
+
+class other : public staff
+{
+protected:
+	string department;
+	string job;
 };

@@ -1,3 +1,4 @@
+// todoï¼šæœ¬èŠ‚ä½¿ç”¨ç©ºæŒ‡é’ˆè¿›è¡Œç±»æˆå‘˜å‡½æ•°è°ƒç”¨
 #include <iostream>
 
 using namespace std;
@@ -9,12 +10,12 @@ public:
     
     void test01()
     {
-        cout << "ÕâÊÇÒ»¸öpplÀàµÄÊµÀı" << endl;
+        cout << "è¿™æ˜¯ä¸€ä¸ªpplç±»çš„å®ä¾‹" << endl;
     }
 
     void test02()
     {
-        cout << "´ËÈËµÄÄêÁäÎª" << age << "Ëê" << endl;
+        cout << "æ­¤äººçš„å¹´é¾„ä¸º" << age << "å²" << endl;
     }
 };
 
@@ -22,7 +23,7 @@ int main()
 {
     ppl *p = nullptr;
     p->test01();
-    // p->test02(); // »á±¨´í,ÒòÎªpÊÇ¿ÕÖ¸Õë
+    // p->test02(); // ä¼šæŠ¥é”™ï¼Œå› ä¸ºpæ˜¯ç©ºæŒ‡é’ˆ
 
     return 0;
 }
