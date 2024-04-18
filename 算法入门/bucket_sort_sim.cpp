@@ -1,4 +1,4 @@
-// 本节讲解桶排序
+// 本节讲解简化版桶排序
 #include <iostream>
 
 using namespace std;
