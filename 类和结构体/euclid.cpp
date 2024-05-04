@@ -109,16 +109,30 @@ public:
     {
         return degree;
     }
+
+    friend Polynomial operator%(const Polynomial &a, const Polynomial &b); // 声明取模运算符的友元函数
+    friend Polynomial gcd(Polynomial a, Polynomial b); // 声明欧几里得辗转相除法的友元函数
 };
 
-Polynomial remain(const Polynomial &f, const Polynomial &g) // 求余数
+Polynomial operator%(const Polynomial &a, const Polynomial &b) // 重载取模运算符
 {
-    int n = f.getDegree(), m = g.getDegree();
-    Polynomial r = f;
-    for (int i = n - m; i >= 0; i--)
+    Polynomial res(a.getDegree() - b.getDegree() + 1);
+    for (int i = 0; i <= a.getDegree() - b.getDegree(); i++)
     {
-        double t = r[i + m] / g[m];
-        for (int j = 0; j <= m; j++)
-            r[i + j] -= t * g[j];
+        res.coef[i] = a.coef[i];
     }
+    for (int i = 0; i <= b.getDegree(); i++)
+    {
+        res.coef[a.getDegree() - b.getDegree() + i] -= b.coef[i];
+    }
+    return res;
+}
+
+Polynomial gcd(Polynomial a, Polynomial b) // 欧几里得辗转相除法
+{
+    if (b.getDegree() == 0)
+        return a;
+
+    Polynomial r = a % b;
+    return gcd(b, r);
 }
