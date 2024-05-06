@@ -6,9 +6,9 @@ using namespace std;
 
 int main()
 {
-    vector<int> v = {1, 2, 3, 4, 5};
+    vector<int> v = {1, 2, 3, 4, 5};      // ?
     vector<int>::iterator it = v.begin(); // 起始迭代器
-    for (; it != v.end(); it++) // 看着很奇怪，实际上也确实挺奇怪的（
+    for (; it != v.end(); it++)           // 看着很奇怪，实际上也确实挺奇怪的（
     {
         cout << *it << " ";
     }
