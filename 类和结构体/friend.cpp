@@ -1,4 +1,4 @@
-// ±¾½Ú½²½âÓÑÔª
+// æœ¬èŠ‚è®²è§£å‹å…ƒ
 #include <iostream>
 #include <string>
 
@@ -13,32 +13,32 @@ public:
 
 class ppl
 {
-    friend void goodfriend_func(ppl &p); // ÉùÃ÷ÓÑÔªº¯Êı
-    // friend class goodfriend_cls;         // ÉùÃ÷ÓÑÔªÀà
-    friend void goodfriend_cls::visit(ppl &p); // ÉùÃ÷ÓÑÔªÀàµÄ³ÉÔ±º¯Êı
+    friend void goodfriend_func(ppl &p); // å£°æ˜å‹å…ƒå‡½æ•°
+    // friend class goodfriend_cls;         // å£°æ˜å‹å…ƒç±»
+    friend void goodfriend_cls::visit(ppl &p); // å£°æ˜å‹å…ƒç±»çš„æˆå‘˜å‡½æ•°
 public:
     string name;
 
 private:
-    string crush_name; // °µÁµ¶ÔÏó(àÅ)
+    string crush_name; // æš—æ‹å¯¹è±¡(å—¯)
 };
 
 
 void goodfriend_cls::visit(ppl &p)
 {
-    cout << "TAµÄ°µÁµ¶ÔÏóÊÇ: " << p.crush_name << endl;
+    cout << "TAçš„æš—æ‹å¯¹è±¡æ˜¯: " << p.crush_name << endl;
     this->str = p.crush_name;
 }
 
 
-// void someone(ppl &p) // ÎŞÈ¨·ÃÎÊ
+// void someone(ppl &p) // æ— æƒè®¿é—®
 // {
-//     cout << "TAµÄ°µÁµ¶ÔÏóÊÇ: " << p.crush_name << endl;
+//     cout << "TAçš„æš—æ‹å¯¹è±¡æ˜¯: " << p.crush_name << endl;
 // }
 
 void goodfriend_func(ppl &p)
 {
-    cout << "TAµÄ°µÁµ¶ÔÏóÊÇ: " << p.crush_name << endl;
+    cout << "TAçš„æš—æ‹å¯¹è±¡æ˜¯: " << p.crush_name << endl;
 }
 
 int main()
