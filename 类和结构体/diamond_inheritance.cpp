@@ -1,4 +1,4 @@
-// ±¾½Ú½²½âÁâĞÎ¼Ì³Ğ
+// æœ¬èŠ‚è®²è§£è±å½¢ç»§æ‰¿
 #include <iostream>
 
 using namespace std;
@@ -6,34 +6,34 @@ using namespace std;
 class gun
 {
 public:
-    string model;     // ĞÍºÅ
-    long long id_num; // ĞòÁĞºÅ
-    int range;        // Éä³Ì
+    string model;     // å‹å·
+    long long id_num; // åºåˆ—å·
+    int range;        // å°„ç¨‹
     void fire()
     {
-        cout << "¿ª»ğ" << endl;
+        cout << "å¼€ç«" << endl;
     }
 };
 
-class Cannon : virtual public gun // ¼ÓÅ©ÅÚÀà
+class Cannon : virtual public gun // åŠ å†œç‚®ç±»
 {
 };
 
-class Howitzer : virtual public gun // Áñµ¯ÅÚÀà
+class Howitzer : virtual public gun // æ¦´å¼¹ç‚®ç±»
 {
 };
 
-class Gun_Howitzer : public Cannon, public Howitzer // ¼ÓÁñÅÚÀà,ÁâĞÎ¼Ì³Ğ
+class Gun_Howitzer : public Cannon, public Howitzer // åŠ æ¦´ç‚®ç±»,è±å½¢ç»§æ‰¿
 {
 };
 
 int main()
 {
     Gun_Howitzer gh;
-    // gh.id_num = 1145141919810; // ²»¿ÉÒÔ,´æÔÚ¶şÒåĞÔ
-    gh.Cannon::id_num = 1145141919810;   // ¿ÉÒÔ,Ö¸¶¨·ÃÎÊ¸¸Àà
-    gh.Howitzer::id_num = 1919810114514; // ¿ÉÒÔ,Ö¸¶¨·ÃÎÊ¸¸Àà
-    // ÔÚÎÒÃÇ²ÉÓÃĞé¼Ì³Ğºó:
+    // gh.id_num = 1145141919810; // ä¸å¯ä»¥,å­˜åœ¨äºŒä¹‰æ€§
+    gh.Cannon::id_num = 1145141919810;   // å¯ä»¥,æŒ‡å®šè®¿é—®çˆ¶ç±»
+    gh.Howitzer::id_num = 1919810114514; // å¯ä»¥,æŒ‡å®šè®¿é—®çˆ¶ç±»
+    // åœ¨æˆ‘ä»¬é‡‡ç”¨è™šç»§æ‰¿å:
     cout << "gh.Cannon::id_num = " << gh.Cannon::id_num << endl;
     cout << "gh.Howitzer::id_num = " << gh.Howitzer::id_num << endl;
     return 0;
