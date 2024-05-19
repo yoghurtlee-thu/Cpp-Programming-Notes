@@ -1,5 +1,6 @@
 // TODO：本节讲解元组
 #include <iostream>
+#include <string>
 #include <tuple>
 
 int main()
@@ -11,5 +12,9 @@ int main()
     // {
     //     std::cout << std::get<i>(t) << std::endl;
     // }
+    int x;
+    std::string y;
+    double z;
+    std::tie(x, y, z) = std::make_tuple(1, "2", 3.0);
     return 0;
 }
