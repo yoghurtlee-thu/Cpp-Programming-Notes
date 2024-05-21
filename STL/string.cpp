@@ -12,4 +12,9 @@ int main()
     string::size_type sz = 2;
     int n = stoi(s, &sz);
     cout << n << endl; // 50
+    istringstream is(s);
+    string bac = "";
+    is >> n >> bac;
+    cout << n << ", " << bac << endl; // 50, cats
+    return 0;
 }
