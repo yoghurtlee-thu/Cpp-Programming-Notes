@@ -1,4 +1,3 @@
-// ²»±©Â¶std
 #include <iostream>
 
 int main()

@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdint>
 
 union union_name
 {
