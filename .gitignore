@@ -3,3 +3,4 @@ bin
 .DS_Store
 demo.*
 .vscode/*
+*/.DS_Store
